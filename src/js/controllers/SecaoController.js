@@ -1,6 +1,9 @@
 myApp.controller('SecaoController', SecaoController);
 
-function SecaoController() {
+SecaoController.$inject = ['ApiFactory'];
+
+function SecaoController(ApiFactory) {
     const vm = this;
-    vm.title = 'Secão controller'
+
+
 }
