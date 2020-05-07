@@ -1,0 +1,8 @@
+div .bg-dark-blue {
+  background: #171b21;
+}
+
+.table thead th,
+.table tbody tr td {
+  border-color: #343a40 !important;
+}

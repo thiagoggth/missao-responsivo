@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container text-white">
+    <h1 class="text-center mt-2">Seções</h1>
     <div class="table-responsive mt-4">
-        <table class="table table-bordered">
+        <table class="table table-bordered rounded bg-dark-blue text-white">
             <thead>
                 <tr>
                     <th class="text-center" scope="col">Id</th>
@@ -8,17 +9,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="text-center">1</td>
-                    <td>AGRICULTURA, PECUÁRIA, PRODUÇÃO FLORESTAL, PESCA E AQÜICULTURA</td>
-                </tr>
-                <tr>
-                    <td class="text-center">2</td>
-                    <td>INDÚSTRIAS DE TRANSFORMAÇÃO</td>
-                </tr>
-                <tr>
-                    <td class="text-center">3</td>
-                    <td>ÁGUA, ESGOTO, ATIVIDADES DE GESTÃO DE RESÍDUOS E DESCONTAMINAÇÃO</td>
+                <tr ng-repeat="secao in vm.secoesList">
+                    <td class="text-center">{{secao.id}}</td>
+                    <td>{{secao.descricao}}</td>
                 </tr>
             </tbody>
         </table>
