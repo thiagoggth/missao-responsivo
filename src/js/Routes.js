@@ -9,6 +9,10 @@ angular.module('myApp')
                 templateUrl: 'templates/SecaoView.html',
                 controller: 'SecaoController as vm'
             })
+            .when('/divisao', {
+                templateUrl: 'templates/DivisaoView.html',
+                controller: 'DivisaoController as vm'
+            })
             .otherwise({
                 redirectTo: '/'
             })
