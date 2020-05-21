@@ -13,6 +13,10 @@ angular.module('myApp')
                 templateUrl: 'templates/DivisaoView.html',
                 controller: 'DivisaoController as vm'
             })
+            .when('/grupos', {
+                templateUrl: 'templates/GruposView.html',
+                controller: 'GruposController as vm'
+            })
             .otherwise({
                 redirectTo: '/'
             })

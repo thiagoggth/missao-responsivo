@@ -1,0 +1,19 @@
+<div class="container text-white">
+    <h1 class="text-center mt-2">Seções</h1>
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered rounded bg-dark-blue text-white">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">ID</th>
+                    <th scope="col">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="grupo in vm.gruposList">
+                    <td class="text-center">{{grupo.id}}</td>
+                    <td>{{grupo.descricao}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

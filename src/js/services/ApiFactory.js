@@ -9,6 +9,7 @@ function ApiFactory($http) {
         },
         secoesList: [],
         divisoesList: [],
+        gruposList: [],
         getAllSecoes: function () {
             return $http.get(`${this.url}secoes`)
                 .then(response => {
@@ -21,6 +22,13 @@ function ApiFactory($http) {
                 .then(response => {
                     this.divisoesList = response.data
                     return this.divisoesList;
+                });
+        },
+        getAllGrupos: function () {
+            return $http.get(`${this.url}grupos`)
+                .then(response => {
+                    this.gruposList = response.data;
+                    return this.gruposList;
                 });
         }
     }
