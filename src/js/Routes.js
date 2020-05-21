@@ -5,11 +5,11 @@ angular.module('myApp')
                 templateUrl: 'templates/HomeView.html',
                 controller: 'HomeController as vm'
             })
-            .when('/secao', {
+            .when('/secoes', {
                 templateUrl: 'templates/SecaoView.html',
                 controller: 'SecaoController as vm'
             })
-            .when('/divisao', {
+            .when('/divisoes', {
                 templateUrl: 'templates/DivisaoView.html',
                 controller: 'DivisaoController as vm'
             })
