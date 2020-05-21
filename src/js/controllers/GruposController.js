@@ -10,7 +10,6 @@ function GruposController(api) {
         api.getAllGrupos()
             .then(response => {
                 vm.gruposList = response;
-                console.log(vm.gruposList);
             });
     } else {
         vm.gruposList = api.gruposList;
