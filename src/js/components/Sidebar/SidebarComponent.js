@@ -4,7 +4,16 @@ myApp.component('sidebarComponent', {
     controllerAs: 'vm'
 });
 
-function SidebarComponentController() {
+SidebarComponentController.$inject = ['$location']
+function SidebarComponentController($location) {
     const vm = this;
-    vm.title = 'controller test';
+
+    vm.isSelected = function (menuOption) {
+        
+        if (menuOption === $location.path()) {
+            return 'active';
+        }
+
+        return '';
+    }
 }

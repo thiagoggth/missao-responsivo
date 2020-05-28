@@ -20,6 +20,10 @@ angular.module('myApp')
                 templateUrl: 'templates/GruposView.html',
                 controller: 'GruposController as vm'
             })
+            .when('/classes', {
+                templateUrl: 'templates/ClasseView.html',
+                controller: 'ClasseController as vm'
+            })
             .otherwise({
                 redirectTo: '/'
             })

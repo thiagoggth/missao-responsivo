@@ -10,6 +10,7 @@ function ApiFactory($http) {
         secoesList: [],
         divisoesList: [],
         gruposList: [],
+        classesList: [],
         getAllSecoes: function () {
             return $http.get(`${this.url}secoes`)
                 .then(response => {
@@ -30,6 +31,15 @@ function ApiFactory($http) {
                     this.gruposList = response.data;
                     return this.gruposList;
                 });
+        },
+        getAllclasses: function () {
+            return $http.get(`${this.url}classes`)
+                .then(response => {
+                    this.classesList = response.data;
+                    return this.classesList
+                });
         }
+
+
     }
 }
