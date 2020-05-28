@@ -5,6 +5,9 @@ angular.module('myApp')
                 templateUrl: 'templates/HomeView.html',
                 controller: 'HomeController as vm'
             })
+            .when('/home', {
+                redirectTo: '/'
+            })
             .when('/secoes', {
                 templateUrl: 'templates/SecaoView.html',
                 controller: 'SecaoController as vm'

@@ -1,0 +1,12 @@
+<table class="table table-bordered rounded bg-dark-blue text-white">
+    <thead>
+        <tr>
+            <th scope="col" ng-repeat="title in vm.header">{{title}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.list">
+            <td ng-repeat="field in vm.fields">{{item[field]}}</td>
+        </tr>
+    </tbody>
+</table>

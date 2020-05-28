@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>myApp</title>
-
 </head>
 
 <body class="bg-dark" ng-app="myApp">
 
-    <div ng-view>
-    </div>
+    <sidebar-component></sidebar-component>
+    <main ng-view ml-lg-2>
+
+    </main>
 
     <script src="./js/libs/jquery.min.js"></script>
     <script src="./js/libs/bootstrap.min.js"></script>
@@ -26,6 +27,8 @@
     <script src="./js/controllers/SecaoController.js"></script>
     <script src="./js/controllers/DivisaoController.js"></script>
     <script src="./js/controllers/GruposController.js"></script>
+    <script src="./js/components/Table/TableComponent.js"></script>
+    <script src="./js/components/Sidebar/SidebarComponent.js"></script>
     <script src="./js/services/ApiFactory.js"></script>
 </body>
 

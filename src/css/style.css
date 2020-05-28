@@ -6,3 +6,46 @@ div .bg-dark-blue {
 .table tbody tr td {
   border-color: #343a40 !important;
 }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text-gray{
+  color: #9e9e9e !important;
+}
+
+@media (min-width: 768px) {
+  main {
+      margin-left: 25%;
+  }
+
+}
+
+@media (min-width: 992px) {
+  main {
+      margin-left: 16%;
+  }
+
+}
+
+main {
+  padding: 0 1%;
+}
+
+.active{
+  color: #7e8388!important;
+}
+
+.text-white{
+  transition: ease-in-out 0.2s all;
+}
+
+a.text-white:hover{
+  color: #595c5e!important;
+}
