@@ -11,6 +11,7 @@ function ApiFactory($http) {
         divisoesList: [],
         gruposList: [],
         classesList: [],
+        subclassesList: [],
         getAllSecoes: function () {
             return $http.get(`${this.url}secoes`)
                 .then(response => {
@@ -32,11 +33,18 @@ function ApiFactory($http) {
                     return this.gruposList;
                 });
         },
-        getAllclasses: function () {
+        getAllClasses: function () {
             return $http.get(`${this.url}classes`)
                 .then(response => {
                     this.classesList = response.data;
                     return this.classesList
+                });
+        },
+        getAllSubclasses: function () {
+            return $http.get(`${this.url}subclasses`)
+                .then(response => {
+                    this.subclassesList = response.data;
+                    return this.subclassesList;
                 });
         }
 

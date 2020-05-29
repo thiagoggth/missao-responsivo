@@ -24,6 +24,10 @@ angular.module('myApp')
                 templateUrl: 'templates/ClasseView.html',
                 controller: 'ClasseController as vm'
             })
+            .when('/subclasses', {
+                templateUrl: 'templates/SubclasseView.html',
+                controller: 'SubclasseController as vm'
+            })
             .otherwise({
                 redirectTo: '/'
             })

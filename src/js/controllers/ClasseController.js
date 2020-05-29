@@ -7,7 +7,7 @@ function ClasseController(api) {
     vm.classesList = [];
 
     if (api.classesList[0] === undefined) {
-        api.getAllclasses()
+        api.getAllClasses()
             .then(response => {
                 vm.classesList = response;
             })
