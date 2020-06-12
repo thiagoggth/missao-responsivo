@@ -1,1 +1,1 @@
-const myApp = angular.module('myApp', ['ngRoute']);
+const myApp = angular.module('myApp', ['angularUtils.directives.dirPagination', 'ngRoute']);

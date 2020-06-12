@@ -2,6 +2,10 @@ div .bg-dark-blue {
   background: #171b21;
 }
 
+.h-100vh{
+  height: 100vh;
+}
+
 .table thead th,
 .table tbody tr td {
   border-color: #343a40 !important;
