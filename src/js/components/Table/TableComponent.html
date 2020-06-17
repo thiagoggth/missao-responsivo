@@ -6,7 +6,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr dir-paginate="item in vm.list | itemsPerPage: 10">
+            <tr dir-paginate="item in vm.list | orderBy: 'descricao' | itemsPerPage: 10">
                 <td ng-repeat="field in vm.fields">{{item[field]}}</td>
             </tr>
         </tbody>

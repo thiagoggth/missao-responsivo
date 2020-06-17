@@ -2,6 +2,10 @@ div .bg-dark-blue {
   background: #171b21;
 }
 
+a i.fa-filter{
+  font-size: 13px;
+}
+
 .h-100vh{
   height: 100vh;
 }
