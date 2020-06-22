@@ -1,10 +1,35 @@
 <div class="container text-white">
     <h1 class="text-center mt-2">Subclasses</h1>
-    <div class="table-responsive mt-4">
-        <table-component 
-            list=vm.subclassesList 
-            header="['ID', 'Descrição']" 
-            fields="['id', 'descricao']"
-        ></table-component>
-    </div>
+
+    <h2><i class="fas fa-filter"></i> Filtros</h2>
+
+    <filter-select-component
+        first-item =  "'Por Seção'"
+        items = "vm.itemsSecoes"
+        function = "vm.filtrarPorSecao"
+    ></filter-select-component>
+
+    <filter-select-component
+        first-item =  "'Por Divisão'"
+        items = "vm.itemsDivisoes"
+        function = "vm.filtrarPorDivisao"
+    ></filter-select-component>
+
+    <filter-select-component
+        first-item =  "'Por Grupo'"
+        items = "vm.itemsGrupos"
+        function = "vm.filtrarPorGrupo"
+    ></filter-select-component>
+
+    <filter-select-component
+        first-item =  "'Por Classe'"
+        items = "vm.itemsClasses"
+        function = "vm.filtrarPorClasse"
+    ></filter-select-component>
+    
+    <table-component 
+        list=vm.subclassesList 
+        header="['ID', 'Descrição']" 
+        fields="['id', 'descricao']"
+    ></table-component>
 </div>

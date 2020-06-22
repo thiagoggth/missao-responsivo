@@ -1,10 +1,17 @@
 <div class="container text-white">
     <h1 class="text-center mt-2">Divisões</h1>
-    <div class="table-responsive mt-4">
-        <table-component 
-            list=vm.divisoesList 
-            header="['ID', 'Descrição']" 
-            fields="['id', 'descricao']"
-        ></table-component>
-    </div>
+
+    <h2><i class="fas fa-filter"></i> Filtros</h2>
+
+    <filter-select-component
+        first-item = "'Por Seção'"
+        items = "vm.items"
+        function = "vm.filtrarPorSecao"
+    ></filter-select-component>
+
+    <table-component 
+        list=vm.divisoesList 
+        header="['ID', 'Descrição']" 
+        fields="['id', 'descricao']"
+    ></table-component>
 </div>

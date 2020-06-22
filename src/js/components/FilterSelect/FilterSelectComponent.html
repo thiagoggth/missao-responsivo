@@ -1,0 +1,15 @@
+<div class="dropdown btn-group mt-2">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{vm.firstItem}}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <span class="dropdown-item btn" ng-click="vm.function()">Todos</span>
+        <span 
+            class="dropdown-item btn" 
+            ng-repeat="item in vm.items"
+            ng-click="vm.function(item.id)"
+        >
+            {{item.descricao}}</span>
+    </div>
+</div>

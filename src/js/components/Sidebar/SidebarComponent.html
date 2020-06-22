@@ -1,5 +1,5 @@
 <nav id="sidebarMenu"
-  class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse position-fixed h-100 bg-dark border-right border-secondary">
+  class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse position-fixed h-100 bg-dark border-right border-secondary pr-0 pl-0">
   <div class="sidebar-sticky pt-3">
     <div class="text-center bg-dark-blue">
       <a class="nav-link text-white" href="#!/home">
@@ -14,13 +14,6 @@
       </a>
     </h6>
     <ul class="nav flex-column ">
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#!/">
-          <span data-feather="filtro"></span>
-          <i class="fas fa-filter"></i>
-          Filtro
-        </a>
-      </li>
       <li class="nav-item">
         <a class="nav-link {{vm.isSelected('/secoes')}} text-white" href="#!/secoes">
           <span data-feather="secoes"></span>
@@ -53,5 +46,48 @@
       </li>
 
     </ul>
+  </div>
+
+</nav>
+
+<nav class="container text-white mt-4 navbar-expand-md bg-dark" id="navbarHeader">
+  <button class="navbar-toggler collapsed border border-white" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars text-white "></i>
+  </button>
+  <div class="collapse" id="navbarCollapse">
+    <ul class="nav flex-column ">
+      <li class="nav-item">
+        <a class="nav-link {{vm.isSelected('/secoes')}} text-white" href="#!/secoes">
+          <span data-feather="secoes"></span>
+          Secões
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{vm.isSelected('/divisoes')}} text-white" href="#!/divisoes">
+          <span data-feather="divisoes"></span>
+          Divisões
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{vm.isSelected('/grupos')}} text-white" href="#!/grupos">
+          <span data-feather="grupos"></span>
+          Grupos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{vm.isSelected('/classes')}} text-white" href="#!/classes">
+          <span data-feather="classes"></span>
+          Classes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{vm.isSelected('/subclasses')}} text-white" href="#!/subclasses">
+          <span data-feather="subclasses"></span>
+          Subclasses
+        </a>
+      </li>
+    </ul>
+
   </div>
 </nav>
